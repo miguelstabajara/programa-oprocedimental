@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    int vet[5],vet1[5], *p;
+    int i,j=0;
+    p = vet;
+    for(i=0;i<5;i++){
+        printf("Digite o valor da posicao %d\n",i+1);
+        scanf("%d",p+i);
+    }
+    for(i=0;i<5;i++){
+        if((*(p+i))%2==0){
+            vet1[j]=(p+i);
+            j++;
+        }
+    }
+    printf("O endereco dos numeros pares sao:\n");
+    for(i=0;i<j;i++){
+        printf("%p\n",vet1[i]);
+    }
+}

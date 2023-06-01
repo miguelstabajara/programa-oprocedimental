@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    int vet[10], *p,*p_max,*p_min;
+    int i;
+    p = vet;
+    p_max = vet;
+    p_min = vet;
+    for(i=0;i<10;i++){
+        printf("Digite o valor da posicao %d\n",i+1);
+        scanf("%d",(p+i));
+    }
+    for(i=0;i<10;i++){
+        if((*p_max)<(*(p+i))){
+            p_max = (p+i);
+        }
+        if((*p_min)>(*(p+i))){
+            p_min = (p+i);
+        }
+    }
+    printf("Menor elemento: %d\nMaior elemento: %d",*p_min,*p_max);
+}

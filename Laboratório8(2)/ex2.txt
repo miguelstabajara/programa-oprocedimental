@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    float mat[3][3], *p;
+    int i;
+    p = &mat[0][0];
+    for(i=0;i<9;i++){
+        printf("%p\n",(p+i));
+    }
+}

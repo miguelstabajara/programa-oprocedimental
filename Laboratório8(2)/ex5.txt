@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    int i,j;
+    char str1[100],str2[100],*p1,*p2;
+    printf("Digite duas frases");
+    gets(str1);
+    setbuf(stdin,NULL);
+    gets(str2);
+    p1 = str1;
+    p2 = str2;
+    for(i=0;str[i]!='\0';i++){
+        if((p1+i)==(p2+i)){
+            for(j=i;str[j]!='\0';j++){
+                
+            }
+        }
+    }
+        
+}

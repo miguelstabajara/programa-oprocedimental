@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    int A,*B,**C,***D,d,t,q;
+    B = &A;
+    C = &B;
+    D = &C;
+    printf("Digite um valor inteiro\n");
+    scanf("%d",&A);
+
+    q = (***D)+(***D)+(***D)+(***D);
+    t = (**C)+(**C)+(**C);
+    d = (*B)+(*B);
+
+    printf("%d %d %d",q,t,d);
+}
